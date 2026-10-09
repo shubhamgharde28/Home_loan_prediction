@@ -1,8 +1,9 @@
 # Home Loan Prediction
 
 A Streamlit demo for the home-loan classification notebook. It trains the
-notebook's tuned random-forest classifier from `train.csv` and provides a form
-for trying applicant details.
+notebook's tuned random-forest classifier from `train.csv` and includes an
+overview dashboard, an interactive prediction form, and a full training-data
+table with a CSV download.
 
 ## Run locally
 
@@ -13,8 +14,9 @@ python -m pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The app needs `train.csv` in the project root. The separate `test.csv` file is
-not needed for interactive predictions.
+The app needs `train.csv` in the project root. The Overview and Explore all
+data tabs use this training sample; the separate `test.csv` file is not needed
+for interactive predictions.
 
 ## Deploy on Streamlit Community Cloud
 
